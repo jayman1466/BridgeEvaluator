@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling >= 1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "BridgeEvaluator"
+dynamic = ["version"]
+authors = [{ name="Jaymin Patel", email="jayman1466@gmail.com" },]
+description = "This package designs bridgeRNAs targeting a given locus and and provides metrics to evaluate their efficiencies and specificities"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "biopython>=1.85", 
+    "pandas>=2.2.0",  
+    "Levenshtein>=0.27.1",
+    "viennarna>=2.7.0"
+]
+license = { file = "LICENSE" }
+
+[tool.hatch.version]
+path = "src/bridge_evaluator/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bridge_evaluator"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/bridge_evaluator/**",
+  "pyproject.toml",
+  "README.md",
+  "LICENSE",
+  "examples/**"
+]

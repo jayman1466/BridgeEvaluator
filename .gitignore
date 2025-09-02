@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.ipynb_checkpoints/
+# Build / packaging
+build/
+dist/
+*.whl
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
