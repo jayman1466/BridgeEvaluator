@@ -1,15 +1,79 @@
-# Python
+# --- Python bytecode / cache ---
 __pycache__/
 *.py[cod]
-*.egg-info/
-.venv/
-.env
-.ipynb_checkpoints/
-# Build / packaging
+*$py.class
+
+# --- C extensions ---
+*.so
+
+# --- Packaging / build artifacts (hatch, setuptools, etc.) ---
 build/
 dist/
-*.whl
-# OS / editor
-.DS_Store
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+.wheelhouse/
+
+# --- Test / coverage ---
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# --- Linters / type checkers ---
+.mypy_cache/
+.pyright/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# --- Dotenv / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Editors / IDEs ---
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Hatch / tool metadata ---
+.hatch/
+
+# --- Docs (uncomment if you build docs locally) ---
+# docs/_build/
+# site/
+
+# --- Optional: local data/outputs (uncomment if appropriate) ---
+# data/
+# outputs/
+# models/
+# logs/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.conda/
+.venv-wheel/
