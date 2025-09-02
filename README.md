@@ -115,11 +115,11 @@ __strand__: Orientation of the Target Sequence (+ or -) relative to the target l
 
 __core__: Core sequence being used
 
-__perfect_match_targets__: Number of perfect matches of the Target Sequence present in the provided recipient genome. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching.
+__perfect_match_targets__: Number of perfect matches of the Target Sequence to the provided recipient genome. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching.
 
-__levenshtein_distance_1_targets__: Number of matches of the Target Sequence present in the provided recipient genome with a Levenshtein distance of 1. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching. Indels are scored as a distance of 2. SNPs are scored as a distance of 1.
+__levenshtein_distance_1_targets__: Number of matches of the Target Sequence to the provided recipient genome with a Levenshtein distance of 1. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching. Indels are scored as a distance of 2. SNPs are scored as a distance of 1.
 
-__levenshtein_distance_2_targets__: Number of matches of the Target Sequence present in the provided recipient genome with a Levenshtein distance of 2. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching. Indels are scored as a distance of 2. SNPs are scored as a distance of 1.
+__levenshtein_distance_2_targets__: Number of matches of the Target Sequence to the provided recipient genome with a Levenshtein distance of 2. Note, only the first X bp specified by the kmer attribute (default = 11) is used for matching. Indels are scored as a distance of 2. SNPs are scored as a distance of 1.
 
 __bridge_sequence__: Full sequence of the bridgeRNA
 
