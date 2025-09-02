@@ -11,6 +11,8 @@ pip install BridgeEvaluator
 ```
 You must also install the [Vienna RNA Suite](https://www.tbi.univie.ac.at/RNA/ViennaRNA/doc/html/install.html) if you want to score the predicted folding of the designed bRNAs. If you don't have this installed, set *score_structure=False* in the *design_bridges()* command. 
 
+If you are getting a package not found error, this can usually be fixed by updating your python and pip versions. It may make sense to do this within a new conda environment. 
+
 ### Manual Installation
 Alternatively, for manual installation, you can place the files from the __"src/BridgeEvaluator/"__ directory directly into your working directory. If you use this manual installation, make sure you have the following dependencies installed with a __python version >=3.9__:
 
